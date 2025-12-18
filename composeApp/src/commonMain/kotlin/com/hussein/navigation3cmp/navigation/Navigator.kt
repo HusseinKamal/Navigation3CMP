@@ -7,7 +7,7 @@ class Navigator(
 ) {
     fun navigate(key: NavKey) {
         if(key in navigationState.backStacks.keys){
-            navigationState.backStacks[key]?.clear()
+            navigationState.topLevelRoute = key
         }
         else
         {
