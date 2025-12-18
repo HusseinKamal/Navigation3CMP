@@ -39,3 +39,6 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 [Screen_recording_20251217_153353.webm](https://github.com/user-attachments/assets/add42e0b-4995-47e0-b5ca-fcf942326108)
 
 [Screen_recording_20251217_163804.webm](https://github.com/user-attachments/assets/8d87788c-c863-4a34-bd7f-39f87ebf2773)
+
+[Screen_recording_20251218_130115.webm](https://github.com/user-attachments/assets/4ff64958-5c44-42d8-bb41-4043ff95ae16)
+
