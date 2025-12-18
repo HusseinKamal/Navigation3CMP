@@ -33,3 +33,9 @@ in your IDE’s toolbar or open the [/iosApp](./iosApp) directory in Xcode and r
 ---
 
 Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+
+# App demo
+
+[Screen_recording_20251217_153353.webm](https://github.com/user-attachments/assets/add42e0b-4995-47e0-b5ca-fcf942326108)
+
+[Screen_recording_20251217_163804.webm](https://github.com/user-attachments/assets/8d87788c-c863-4a34-bd7f-39f87ebf2773)
