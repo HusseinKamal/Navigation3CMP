@@ -42,12 +42,16 @@ kotlin {
             implementation(libs.androidx.lifecycle.viewmodelCompose)
             implementation(libs.androidx.lifecycle.runtimeCompose)
 
-            //implementation(libs.androidx.navigation3.ui)
+            implementation(libs.androidx.navigation3.ui)
             implementation(libs.androidx.navigation3.runtime)
             implementation(libs.jetbrains.lifecycle.viewmodel)
             implementation(libs.kotlinx.serialization.json)
             implementation(libs.jetbrains.navigation3.ui)
             implementation(libs.jetbrains.lifecycle.viewmodel.nav3)
+
+            implementation(libs.material3.adaptive)
+            implementation(libs.material3.adaptive.layout)
+
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
