@@ -42,3 +42,7 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 
 [Screen_recording_20251218_130115.webm](https://github.com/user-attachments/assets/4ff64958-5c44-42d8-bb41-4043ff95ae16)
 
+* Support large screens like tablets with ListSceneStrategy
+  
+<img width="2424" height="1080" alt="Screenshot_20251228_163841" src="https://github.com/user-attachments/assets/c72427ba-2487-4893-9ffe-4f21cbcb78e3" />
+
