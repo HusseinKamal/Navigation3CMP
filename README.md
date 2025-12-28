@@ -46,3 +46,10 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
   
 <img width="2424" height="1080" alt="Screenshot_20251228_163841" src="https://github.com/user-attachments/assets/c72427ba-2487-4893-9ffe-4f21cbcb78e3" />
 
+* Support restore data on back clicked with ResultStore
+  
+<img width="1080" height="2424" alt="Screenshot_20251228_171652" src="https://github.com/user-attachments/assets/ac3466e1-053c-4ca0-9226-8e3e90dcfaca" />
+<img width="1080" height="2424" alt="Screenshot_20251228_171715" src="https://github.com/user-attachments/assets/2a977d93-9f2b-4ad6-87c6-4334b232e51f" />
+
+
+
