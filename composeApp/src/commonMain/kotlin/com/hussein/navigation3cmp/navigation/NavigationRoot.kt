@@ -3,6 +3,7 @@ package com.hussein.navigation3cmp.navigation
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -13,6 +14,8 @@ import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.ui.NavDisplay
 import com.hussein.navigation3cmp.scenes.ListDetailScene
 import com.hussein.navigation3cmp.scenes.rememberListDetailSceneStrategy
+import com.hussein.navigation3cmp.screens.ChangeSettingScreen
+import com.hussein.navigation3cmp.screens.SettingScreen
 import com.hussein.navigation3cmp.screens.TodoDetailScreen
 import com.hussein.navigation3cmp.screens.TodoListScreen
 
@@ -27,6 +30,8 @@ fun NavigationRoot(
     val navigator = remember {
         Navigator(navigationState)
     }
+    val resultStore = rememberResultStore()
+
     Scaffold(
         bottomBar = {
             TodoNavigationBar(
@@ -72,13 +77,20 @@ fun NavigationRoot(
                         )
                     }
                     entry<Route.Settings> {
-                        Box(
-                            modifier = Modifier
-                                .fillMaxSize(),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            Text("Settings")
-                        }
+                        SettingScreen(
+                            resultStore = resultStore,
+                            onChangeSettingClick = {
+                                navigator.navigate(Route.ChangeSettings)
+                            }
+                        )
+                    }
+                    entry<Route.ChangeSettings> {
+                        ChangeSettingScreen(
+                            onSave = {
+                                navigator.goBack()
+                            },
+                            resultStore = resultStore
+                        )
                     }
                 }
             )
