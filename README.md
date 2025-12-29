@@ -52,5 +52,8 @@ Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-mu
 <img width="300" height="800" alt="Screenshot_20251228_171715" src="https://github.com/user-attachments/assets/2a977d93-9f2b-4ad6-87c6-4334b232e51f" />
 <img width="300" height="800" alt="Screenshot_20251228_171947" src="https://github.com/user-attachments/assets/39cf4db9-81ff-41d2-be7f-fab4f443ac4e" />
 
+*Animation and transition on navigation
+[Screen_recording_20251229_114205.webm](https://github.com/user-attachments/assets/d3f09250-36a1-477c-8f17-6600d70c4f99)
+
 
 
