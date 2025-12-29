@@ -1,5 +1,11 @@
 package com.hussein.navigation3cmp.navigation
 
+import androidx.compose.animation.ExitTransition
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.slideInHorizontally
+import androidx.compose.animation.slideOutHorizontally
+import androidx.compose.animation.togetherWith
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -49,6 +55,18 @@ fun NavigationRoot(
                 .padding(innerPadding),
             onBack = navigator::goBack,
             sceneStrategy = rememberListDetailSceneStrategy(),//support Large screens
+            transitionSpec = {
+                slideInHorizontally {it} + fadeIn() togetherWith
+                        slideOutHorizontally{-it} + fadeOut()
+            },//Transition during navigation
+            popTransitionSpec = {
+                slideInHorizontally {-it} + fadeIn() togetherWith
+                        slideOutHorizontally{it} + fadeOut()
+            },
+            predictivePopTransitionSpec = {
+                slideInHorizontally {-it} + fadeIn() togetherWith
+                        slideOutHorizontally{it} + fadeOut()
+            },
             entries = navigationState.toEntries(
                 entryProvider {
                     entry<Route.TodoList>(
